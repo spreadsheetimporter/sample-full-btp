@@ -25,9 +25,14 @@
   ],
   "cds": {
     "requires": {
-      "[production]": {
-        "db": "hana"
-      }
+        "[production]": {
+            "db": {
+                "kind": "hana-cloud"
+            }
+        },
+        "db": {
+            "kind": "sql"
+        }
     }
-  }
+}
 }
