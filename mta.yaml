@@ -6,11 +6,11 @@ parameters:
   enable-parallel-deployments: true
 build-parameters:
   before-all:
-   - builder: custom
-     commands:
-      - npm install --production
-      - npx -p @sap/cds-dk cds build --production
-      - npx rimraf gen/db/src/gen/data
+    - builder: custom
+      commands:
+        - npm install --production
+        - npx -p @sap/cds-dk cds build --production
+        - npx rimraf gen/db/src/gen/data
 
 modules:
   - name: cpapp-srv
@@ -26,6 +26,7 @@ modules:
           srv-url: ${default-url}
     requires:
       - name: cpapp-db
+      - name: cpapp-auth
 
   - name: cpapp-db-deployer
     type: hdb
@@ -41,3 +42,12 @@ resources:
     parameters:
       service: hana
       service-plan: hdi-shared
+  - name: cpapp-auth
+    type: org.cloudfoundry.managed-service
+    parameters:
+      service: xsuaa
+      service-plan: application
+      path: ./xs-security.json
+      config:
+        xsappname: cpapp-${org}-${space}
+        tenant-mode: dedicated

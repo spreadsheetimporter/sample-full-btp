@@ -35,7 +35,8 @@
       "[production]": {
         "db": {
           "kind": "hana-cloud"
-        }
+        },
+        "auth": "xsuaa"
       },
       "db": {
         "kind": "sql"
