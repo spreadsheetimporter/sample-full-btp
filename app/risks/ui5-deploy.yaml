@@ -21,5 +21,7 @@ builder:
     afterTask: generateCachebusterInfo
     configuration:
       archiveName: nsrisks
+      includeDependencies:
+      - ui5-cc-spreadsheetimporter
       additionalFiles:
       - xs-app.json

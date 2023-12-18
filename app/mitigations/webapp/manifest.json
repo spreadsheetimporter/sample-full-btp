@@ -95,6 +95,14 @@
         "resources": {
             "css": []
         },
+        "resourceRoots": {
+            "cc.spreadsheetimporter.v0_29_0": "./thirdparty/customControl/spreadsheetImporter/v0_29_0"
+        },
+        "componentUsages": {
+            "spreadsheetImporter": {
+                "name": "cc.spreadsheetimporter.v0_29_0"
+            }
+        },        
         "routing": {
             "config": {},
             "routes": [
@@ -129,6 +137,17 @@
                                         "route": "MitigationsObjectPage"
                                     }
                                 }
+                            },
+                            "content": {
+                                "header": {
+                                "actions": {
+                                  "ObjectPageExtController": {
+                                    "id": "spreadsheetUploadListReportButton",
+                                    "press": "ns.mitigations.ext.ObjectPageExtController.openSpreadsheetUploadDialogTable",
+                                    "text": "Spreadsheet Upload"
+                                  }
+                                }
+                              }
                             }
                         }
                     }
