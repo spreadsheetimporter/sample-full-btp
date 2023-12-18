@@ -65,8 +65,8 @@
                 "sap.ushell": {},
                 "sap.fe.templates": {}
             },
-            "components" : {
-                "cc.spreadsheetimporter.v0_29_0" : {}
+            "components": {
+                "cc.spreadsheetimporter.v0_29_0": {}
             }
         },
         "contentDensities": {
@@ -98,16 +98,12 @@
         "resources": {
             "css": []
         },
-        "resourceRoots": {
-            "cc.spreadsheetimporter.v0_29_0": "./thirdparty/customControl/spreadsheetImporter/v0_29_0"
-        },
         "componentUsages": {
             "spreadsheetImporter": {
                 "name": "cc.spreadsheetimporter.v0_29_0"
             }
-        },   
+        },
         "routing": {
-            "config": {},
             "routes": [
                 {
                     "pattern": ":?query:",
@@ -135,6 +131,17 @@
                                         "route": "RisksObjectPage"
                                     }
                                 }
+                            },
+                            "content": {
+                                "header": {
+                                    "actions": {
+                                        "ObjectPageExtController": {
+                                            "id": "spreadsheetUploadListReportButton",
+                                            "press": "ns.risks.ext.ObjectPageExtController.openSpreadsheetUploadDialogTable",
+                                            "text": "Spreadsheet Upload"
+                                        }
+                                    }
+                                }
                             }
                         }
                     }
@@ -150,6 +157,11 @@
                         }
                     }
                 }
+            }
+        },
+        "extends": {
+            "extensions": {
+                "sap.ui.controllerExtensions": {}
             }
         }
     },

@@ -29,6 +29,6 @@
     },
     "dependencies": {
         "@sap/ux-ui5-tooling": "^1.11.3",
-        "ui5-cc-spreadsheetimporter": "^0.29.0"
+        "ui5-cc-spreadsheetimporter": "^0.29.1"
     }
 }
