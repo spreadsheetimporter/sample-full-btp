@@ -147,6 +147,7 @@ resources:
           existing_destinations_policy: update
       version: 1.0.0
     service: destination
+    service-name: dest-srv
     service-plan: lite
 - name: cpapp-html5-repo-host
   type: org.cloudfoundry.managed-service
