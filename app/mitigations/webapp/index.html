@@ -12,16 +12,17 @@
     </style>
     <script
         id="sap-ui-bootstrap"
-        src="https://sapui5.hana.ondemand.com/1.119.2/resources/sap-ui-core.js"
+        src="resources/sap-ui-core.js"
         data-sap-ui-theme="sap_horizon"
         data-sap-ui-resourceroots='{
             "ns.mitigations": "./"
         }'
-        data-sap-ui-oninit="module:sap/ui/core/ComponentSupport"
         data-sap-ui-compatVersion="edge"
         data-sap-ui-async="true"
         data-sap-ui-frameOptions="trusted"
     ></script>
+    <script id="locate-reuse-libs" src="./utils/locate-reuse-libs.js" data-sap-ui-manifest-uri="./manifest.json" data-sap-ui-componentName="ns.mitigations"></script>
+
 </head>
 <body class="sapUiBody sapUiSizeCompact" id="content">
     <div

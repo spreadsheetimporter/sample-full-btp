@@ -14,17 +14,19 @@
     },
     "devDependencies": {
         "@cap-js/sqlite": "^1",
-        "@sap/cds-dk": "^7",
+        "@sap/cds": "^7",
         "@sap/ux-specification": "^1.108.16",
-        "rimraf": "^3.0.2"
+        "rimraf": "^3.0.2",
+        "cds-plugin-ui5": "0.7.4"
     },
     "engines": {
         "node": "^18"
     },
     "scripts": {
-        "start": "cds-serve",
+        "start": "cds watch",
+        "start:serve": "cds-serve",
         "watch-risks": "cds watch --open risks/webapp/index.html?sap-ui-xx-viewCache=false",
-        "watch-mitigations": "cds watch --open mitigations/webapp/index.html?sap-ui-xx-viewCache=false",
+        "watch-mitigations": "cds watch --open ns.mitigations/index.html",
         "start-instance-hana": "cf update-service cpapp -c '{'data':{'serviceStopped':false}}'",
         "undeploy": "cf undeploy cpapp --delete-services --delete-service-keys --delete-service-brokers",
         "build": "rimraf resources mta_archives && mbt build --mtar archive",
@@ -46,5 +48,8 @@
                 "kind": "sql"
             }
         }
-    }
+    },
+    "workspaces": [
+        "app/*"
+      ]
 }
