@@ -10,21 +10,19 @@
         "@sap/cds-hana": "^2",
         "@sap/xssec": "^3",
         "express": "^4",
-        "passport": "^0"
-    },
-    "devDependencies": {
+        "mbt": "^1.2.27",
+        "passport": "^0",
+        "rimraf": "5.0.5",
         "@cap-js/sqlite": "^1",
-        "@sap/cds": "^7",
         "@sap/ux-specification": "^1.108.16",
-        "rimraf": "^3.0.2",
         "cds-plugin-ui5": "0.7.4"
     },
     "engines": {
         "node": "^18"
     },
     "scripts": {
-        "start": "cds watch",
-        "start:serve": "cds-serve",
+        "start:serve": "cds watch",
+        "start": "cds-serve",
         "watch-risks": "cds watch --open risks/webapp/index.html?sap-ui-xx-viewCache=false",
         "watch-mitigations": "cds watch --open ns.mitigations/index.html",
         "start-instance-hana": "cf update-service cpapp -c '{'data':{'serviceStopped':false}}'",
@@ -51,5 +49,5 @@
     },
     "workspaces": [
         "app/*"
-      ]
+    ]
 }
