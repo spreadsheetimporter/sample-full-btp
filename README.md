@@ -15,7 +15,7 @@ File or Folder | Purpose
 
 ## Next Steps
 
-- git clone `https://github.com/marianfoo/spreadsheetimporter-btp-example`
+- `git clone https://github.com/spreadsheetimporter/sample-full-btp`
 - `npm install`
 - `npm run watch-mitigations`
 
