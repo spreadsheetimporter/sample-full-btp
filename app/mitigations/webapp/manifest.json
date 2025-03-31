@@ -67,7 +67,7 @@
                 
             },
             "components": {
-                "cc.spreadsheetimporter.v1_1_1": {}
+                "cc.spreadsheetimporter.v2_0_0": {}
             }
         },
         "contentDensities": {
@@ -100,11 +100,11 @@
             "css": []
         },
         "resourceRoots": {
-            "cc.spreadsheetimporter.v1_1_1": "./thirdparty/customcontrol/spreadsheetimporter/v1_1_1"
+            "cc.spreadsheetimporter.v2_0_0": "./thirdparty/customcontrol/spreadsheetimporter/v2_0_0"
           },       
           "componentUsages": {
             "spreadsheetImporter": {
-              "name": "cc.spreadsheetimporter.v1_1_1"
+              "name": "cc.spreadsheetimporter.v2_0_0"
             }
           },        
         "routing": {

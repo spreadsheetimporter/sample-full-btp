@@ -22,6 +22,6 @@ builder:
     configuration:
       archiveName: nsrisks
       includeDependencies:
-      - ui5-cc-spreadsheetimporter
+      - ui5-cc-spreadsheetimporter-v2-0-0
       additionalFiles:
       - xs-app.json
